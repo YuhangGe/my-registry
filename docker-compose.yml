@@ -1,0 +1,16 @@
+version: '3'
+services:
+  registry:
+    container_name: my-registry
+    build:
+      context: '.'
+    image: xiaoge/registry:latest
+    ports:
+       - "5000:5000"
+    restart: always
+    environment:
+      - REGISTRY_AUTH=htpasswd
+      - REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm
+      - REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd
+      - REGISTRY_HTTP_TLS_CERTIFICATE=/certs/certificate.pem
+      - REGISTRY_HTTP_TLS_KEY=/certs/privatekey.pem
