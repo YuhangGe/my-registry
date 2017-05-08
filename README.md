@@ -1,5 +1,9 @@
 # my-registry
 
+[https://docs.docker.com/registry/insecure/#using-self-signed-certificates](https://docs.docker.com/registry/insecure/#using-self-signed-certificates)
+
+[https://docs.docker.com/registry/deploying/#running-a-domain-registry](https://docs.docker.com/registry/deploying/#running-a-domain-registry)
+
 ### 生成证书
 
 ````bash
